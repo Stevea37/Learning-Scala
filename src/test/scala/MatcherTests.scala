@@ -14,7 +14,7 @@ class MatcherTests extends FlatSpec
     "Matcher using a directory contain one file matching the filter" should
     "return a list with that file name" in
     {
-        val results = Matcher("txt", new File(".\\testfiles\\").getCanonicalPath()).execute()
+        val results = Matcher("readme.txt", new File(".\\testfiles\\").getCanonicalPath()).execute()
         assert(results == List("readme.txt"))
     }
 
@@ -28,9 +28,9 @@ class MatcherTests extends FlatSpec
     "return a list with those file names" in
     {
         val searchSubDirectories = true
-        val results = Matcher("txt", new File(".\\testfiles\\").getCanonicalPath(),searchSubDirectories).execute()
+        val results = Matcher("txt", new File(".\\testfiles\\").getCanonicalPath(), searchSubDirectories).execute()
 
-        assert(results == List("notes.txt","readme.txt"))
+        assert(results == List("notes.txt", "readme.txt"))
 
     }
 }

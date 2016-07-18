@@ -19,7 +19,7 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
                 case iOObject :: rest =>
                     iOObject match
                     {
-                        case file : FileObject if filter.matches(file.name) =>
+                        case file : FileObject if FilterChecker(filter).matches(file.name) =>
                             recursiveMatch(rest, file :: currentList)
                         case directory : DirectoryObject =>
                             recursiveMatch(rest ::: directory.children(), currentList)
@@ -34,7 +34,7 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
         {
             /** if rootIOObject is a FileObject and the file name matches the filter string, return as a list. */
             case file :
-              FileObject if filter.matches(file.name) =>
+              FileObject if FilterChecker(filter).matches(file.name) =>
                 List(file)
 
             /** if rootIOObject is a DirectoryObject, find the files in that directory that match the filter string. */

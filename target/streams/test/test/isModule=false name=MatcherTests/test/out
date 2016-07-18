@@ -1,11 +1,9 @@
 [0m[[0minfo[0m] [0m[32mMatcherTests:[0m[0m
 [0m[[0minfo[0m] [0m[32mMatcher that is passed a file matching the filter[0m[0m
-[0m[[0minfo[0m] [0m[31m- should return a list with that file name *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  List() did not equal List("fakePath") (MatcherTests.scala:11)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a list with that file name[0m[0m
 [0m[[0minfo[0m] [0m[32mMatcher using a directory contain one file matching the filter[0m[0m
 [0m[[0minfo[0m] [0m[32m- should return a list with that file name[0m[0m
 [0m[[0minfo[0m] [0m[32mMatcher that is not passed a root file location[0m[0m
 [0m[[0minfo[0m] [0m[32m- should use the current location[0m[0m
 [0m[[0minfo[0m] [0m[32mMatcher with sub folder checking matching root location with two subtree files matching[0m[0m
-[0m[[0minfo[0m] [0m[31m- should return a list with those file names *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  List() did not equal List("notes.txt", "readme.txt") (MatcherTests.scala:33)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should return a list with those file names[0m[0m
