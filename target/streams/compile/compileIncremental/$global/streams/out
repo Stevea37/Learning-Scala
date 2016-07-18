@@ -2,39 +2,14 @@
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set(D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set(D:\GitHub\Learning-Scala\target\scala-2.11\classes\FileObject$.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\IOObject.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\IOObject$class.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FileConverter$.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FilterChecker$.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FilterChecker$$anonfun$findMatchedFiles$3.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FilterChecker$$anonfun$findMatchedFiles$2.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FilterChecker.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FilterChecker$$anonfun$findMatchedFiles$1.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\DirectoryObject$.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\DirectoryObject.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\Matcher.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FileConverter.class, D:\GitHub\Learning-Scala\target\scala-2.11\classes\FileObject.class)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m[naha] 	product: Set(D:\GitHub\Learning-Scala\src\main\scala\IOObject.scala, D:\GitHub\Learning-Scala\src\main\scala\FileConverter.scala, D:\GitHub\Learning-Scala\src\main\scala\FilterChecker.scala, D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(D:\GitHub\Learning-Scala\src\main\scala\FilterChecker.scala, D:\GitHub\Learning-Scala\src\main\scala\IOObject.scala, D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala, D:\GitHub\Learning-Scala\src\main\scala\FileConverter.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(D:\GitHub\Learning-Scala\src\main\scala\FilterChecker.scala, D:\GitHub\Learning-Scala\src\main\scala\IOObject.scala, D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala, D:\GitHub\Learning-Scala\src\main\scala\FileConverter.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Recompiling all 5 sources: invalidated sources (4) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 5 Scala sources to D:\GitHub\Learning-Scala\target\scala-2.11\classes...[0m
-[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.12:component from component compiler for Scala 2.11.8[0m
-[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.12:component from component compiler for Scala 2.11.8[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1c828515, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jre1.8.0_91\lib\resources.jar;C:\Program Files\Java\jre1.8.0_91\lib\rt.jar;C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_91\lib\jce.jar;C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_91\classes;C:\Users\Steven\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	D:\GitHub\Learning-Scala\target\scala-2.11\classes;C:\Users\Steven\.ivy2\cache\org.scalactic\scalactic_2.11\bundles\scalactic_2.11-2.2.6.jar;C:\Users\Steven\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.8.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 1.058217648 s[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala...[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] The D:\GitHub\Learning-Scala\src\main\scala\Matcher.scala source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	execute.[0m
-[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
-[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
