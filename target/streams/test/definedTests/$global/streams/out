@@ -1,2 +1,2 @@
-[0m[[0mdebug[0m] [0mSubclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@38cfe257), (junit.framework.TestCase,false,sbt.SubclassFingerprintWrapper@67d3953a))[0m
-[0m[[0mdebug[0m] [0mAnnotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@1d73e623), (org.junit.Test,false,sbt.AnnotatedFingerprintWrapper@2f52011b), (org.junit.runner.RunWith,false,sbt.AnnotatedFingerprintWrapper@684883fc))[0m
+[0m[[0mdebug[0m] [0mSubclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@3c118680), (junit.framework.TestCase,false,sbt.SubclassFingerprintWrapper@3cd69ce3))[0m
+[0m[[0mdebug[0m] [0mAnnotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@13d94914), (org.junit.Test,false,sbt.AnnotatedFingerprintWrapper@7c5e9ed3), (org.junit.runner.RunWith,false,sbt.AnnotatedFingerprintWrapper@4ccb225e))[0m

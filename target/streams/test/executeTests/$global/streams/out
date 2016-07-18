@@ -1,4 +1,4 @@
-java.lang.IllegalArgumentException: Unable to load class: MatcherTests
+java.lang.IllegalArgumentException: Unable to load class: FilterCheckerTests
 	at org.scalatest.tools.Framework$ScalaTestTask.loadSuiteClass(Framework.scala:436)
 	at org.scalatest.tools.Framework$ScalaTestTask.suiteClass$lzycompute(Framework.scala:440)
 	at org.scalatest.tools.Framework$ScalaTestTask.suiteClass(Framework.scala:440)
@@ -62,4 +62,4 @@ java.lang.IllegalArgumentException: Unable to load class: MatcherTests
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-[0m[[31merror[0m] [0m(test:[31mexecuteTests[0m) java.lang.IllegalArgumentException: Unable to load class: MatcherTests[0m
+[0m[[31merror[0m] [0m(test:[31mexecuteTests[0m) java.lang.IllegalArgumentException: Unable to load class: FilterCheckerTests[0m
