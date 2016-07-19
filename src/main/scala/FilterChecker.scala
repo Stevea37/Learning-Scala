@@ -2,14 +2,17 @@ import java.io.File
 import scala.util.control.NonFatal
 
 class FilterChecker(filter: String) {
+    val filterAsRegex = filter.rege
+
     def matches(content : String) = content contains filter
+
     def findMatchedFiles(iOObjects : List[IOObject]) =
         for(iOObject <- iOObjects
             if(iOObject.isInstanceOf[FileObject])
             if(matches(iOObject.name)))
         yield iOObject
 
-    def matchesFileContent(file: File) = {
+    def findMatchedContentCount(file: File) = {
         import scala.io.Source
         try {
             val fileSource = Source.fromFile(file)

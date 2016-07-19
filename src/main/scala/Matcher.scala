@@ -26,28 +26,29 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
 
 
         val matchedFiles = rootIOObject match {
-            /** if rootIOObject is a FileObject and the file name matches the filter string, return as a list. */
-            case file :
-              FileObject if FilterChecker(filter).matches(file.name) =>
-                List(file)
+          /** if rootIOObject is a FileObject and the file name matches the filter string, return as a list. */
+          case file:
+            FileObject if FilterChecker(filter).matches(file.name) =>
+            List(file)
 
-            /** if rootIOObject is a DirectoryObject, find the files in that directory that match the filter string. */
-            case directory :
-              DirectoryObject =>
-                    if(checkSubFolders) {
-                        recursiveMatch(directory.children(), List())
-                    }
-                    else {
-                        FilterChecker(filter).findMatchedFiles(directory.children())
-                    }
-            /** if rootIOObject doesn't match anything, return an empty list. */
-                case _ =>
-                  List()
+          /** if rootIOObject is a DirectoryObject, find the files in that directory that match the filter string. */
+          case directory:
+            DirectoryObject =>
+            if (checkSubFolders) {
+              recursiveMatch(directory.children(), List())
+            }
+            else {
+              FilterChecker(filter).findMatchedFiles(directory.children())
+            }
+
+          /** if rootIOObject doesn't match anything, return an empty list. */
+          case _ =>
+            List()
         }
 
         val contentFilteredFiles = contentFilter match {
             case Some(dataFilter) => matchedFiles filter(iOObject =>
-                FilterChecker(dataFilter).matchesFileContent(iOObject.file))
+                FilterChecker(dataFilter).findMatchedContentCount(iOObject.file))
             case None => matchedFiles
         }
 
