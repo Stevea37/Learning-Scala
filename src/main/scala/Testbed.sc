@@ -2,11 +2,9 @@
 
 object Testbed {
 
-    val list = List("Hi","bye","yo")
+   val timesby2 = (x: Double) => x * 2
+   timesby2(7)
 
-    val head::tail = list
-
-    head
 
 
 

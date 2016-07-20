@@ -27,13 +27,12 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
 
         val matchedFiles = rootIOObject match {
           /** if rootIOObject is a FileObject and the file name matches the filter string, return as a list. */
-          case file:
-            FileObject if FilterChecker(filter).matches(file.name) =>
-            List(file)
+          case file: FileObject
+              if FilterChecker(filter).matches(file.name) =>
+                List(file)
 
           /** if rootIOObject is a DirectoryObject, find the files in that directory that match the filter string. */
-          case directory:
-            DirectoryObject =>
+          case directory: DirectoryObject =>
             if (checkSubFolders) {
               recursiveMatch(directory.children(), List())
             }
@@ -48,7 +47,7 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
 
         val contentFilteredFiles = contentFilter match {
             case Some(dataFilter) => matchedFiles filter(iOObject =>
-                FilterChecker(dataFilter).findMatchedContentCount(iOObject.file))
+                FilterChecker(dataFilter).findMatchedContentCount(iOObject.file) > 0)
             case None => matchedFiles
         }
 
