@@ -1144,7 +1144,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 226ms :: artifacts dl 17ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 740ms :: artifacts dl 11ms[0m
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 compile produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 runtime produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 test produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-test.xml[0m
@@ -1158,5 +1158,5 @@
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 docs produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 pom produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-searcher#file-searcher_2.11;0.1 scala-tool produced in D:\GitHub\Learning-Scala\target\resolution-cache\reports\file-searcher-file-searcher_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (226ms resolve - 17ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (740ms resolve - 11ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -1,6 +1,6 @@
 import java.io.File
 
-class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalPath(),
+class Matcher(filter: String, val rootLocation: String = new File(".").getCanonicalPath(),
               checkSubFolders: Boolean = false, contentFilter: Option[String] = None) {
   /** Convert to IO viable object*/
     val rootIOObject = FileConverter.convertToIOObject(new File(rootLocation))
@@ -46,15 +46,16 @@ class Matcher(filter: String, rootLocation: String = new File(".").getCanonicalP
         }
 
         val contentFilteredFiles = contentFilter match {
-            case Some(dataFilter) => matchedFiles filter(iOObject =>
-                FilterChecker(dataFilter).findMatchedContentCount(iOObject.file) > 0)
-            case None => matchedFiles
+            case Some(dataFilter) =>
+                matchedFiles.map(iOObject => (iOObject, Some(FilterChecker(dataFilter).findMatchedContentCount(iOObject.file)))).filter(matchTuple=>matchTuple._2.get > 0)
+
+            case None => matchedFiles map (iOObject=>(iOObject, None))
         }
 
-        contentFilteredFiles map(iOObject => iOObject.name)
+        contentFilteredFiles map{case (iOObject, count) => (iOObject.name, count)}
     }
 }
-
+/**
 object Matcher {
 
     var rootLocation  = new File(".").getCanonicalPath()
@@ -66,4 +67,4 @@ object Matcher {
                                           checkSubFolders,
                                             contentFilter)
 
-}
+}*/
